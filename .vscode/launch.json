@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Fetch prayer times",
+            "type": "node",
+            "program": "${workspaceFolder}/src/index.ts",
+            "request": "launch",
+            "runtimeArgs": ["-r", "ts-node/register"],
+            "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+            "sourceMaps": true,
+            "smartStep": true,
+            "preLaunchTask": "npm: build",
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
